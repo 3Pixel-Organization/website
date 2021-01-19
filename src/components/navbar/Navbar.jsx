@@ -5,6 +5,7 @@ import logo from '../../assets/logo.png';
 import { Container } from '../container/Container';
 import { useNavigation } from '../../hooks/useNavigation';
 import { NavItem } from './NavItem';
+import { Nav } from './Nav';
 
 export const Navbar = () => {
   const { makeNavigation } = useNavigation();
@@ -14,12 +15,10 @@ export const Navbar = () => {
       <div className={classes.Brand} style={{ cursor: 'pointer' }} onClick={makeNavigation('/')}>
         <img className={classes.BrandImage} src={logo} alt='Team 3Pixel logo' /> 3Pixel
       </div>
-      <nav className={classes.Links}>
-        <Container as='ul' style={{ justifyContent: 'flex-end' }} alignCenter row fluid>
-          <NavItem text='Home' link='/' />
-          <NavItem text='About Us' link='/about' />
-        </Container>
-      </nav>
+      <Nav>
+        <NavItem text='Home' link='/' />
+        <NavItem text='About Us' link='/about' />
+      </Nav>
     </Container>
   );
 };
