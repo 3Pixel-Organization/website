@@ -26,7 +26,7 @@ export const About = () => {
           <hr />
           <p>
             <strong>Discord</strong>{' '}
-            <a href='https://discord.gg/BS6BVMJ'>https://discord.gg/BS6BVMJ</a>
+            <a target='_blank' rel='noreferrer' href='https://discord.gg/BS6BVMJ'>https://discord.gg/BS6BVMJ</a>
           </p>
         </Card>
       </Container>
