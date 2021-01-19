@@ -36,6 +36,15 @@
   align-items: center;
 }
 
+.NavItem a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+}
+
 .NavItem:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
