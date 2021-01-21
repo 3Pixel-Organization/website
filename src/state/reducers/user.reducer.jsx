@@ -28,6 +28,9 @@ export const userReducer = produce((draft, action) => {
       localStorage.removeItem('3pixel.authToken');
       break;
     default:
-      throw new Error(`Unhandled action type ${action?.type ?? action}`);
+      if (!action.type.includes('@@')) {
+        throw new Error(`Unhandled action type ${action?.type ?? action}`);
+      }
+      break;
   }
 }, initialState);
