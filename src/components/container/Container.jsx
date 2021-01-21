@@ -6,6 +6,7 @@ export const Container = ({
   children,
   alignCenter,
   justifyCenter,
+  justifyStart,
   row,
   column,
   fluid,
@@ -19,6 +20,7 @@ export const Container = ({
   if (className) css += ' ' + className;
   if (alignCenter) css += ' ' + classes.AlignCenter;
   if (justifyCenter) css += ' ' + classes.JustifyCenter;
+  if (justifyStart) css += ' ' + classes.JustifyStart;
   if (row) css += ' ' + classes.Row;
   if (column) css += ' ' + classes.Column;
   if (fluid) css += ' ' + classes.Fluid;

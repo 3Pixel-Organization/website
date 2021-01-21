@@ -1,4 +1,6 @@
 import React from 'react';
+import { FiLogIn } from 'react-icons/fi';
+import { HiUserCircle } from 'react-icons/hi';
 
 import classes from './Navbar.module.css';
 import logo from '../../assets/logo.png';
@@ -18,6 +20,8 @@ export const Navbar = () => {
       <Nav>
         <NavItem text='Home' link='/' />
         <NavItem text='About Us' link='/about' />
+        <NavItem text='Login' link='/login' icon={<FiLogIn />} loggedOut />
+        <NavItem text='' link='/profile' icon={<HiUserCircle size={24} />} loggedIn />
       </Nav>
     </Container>
   );

@@ -45,6 +45,10 @@
   color: inherit;
 }
 
+.NavItem svg {
+  margin-right: 0.25rem;
+}
+
 .NavItem:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
