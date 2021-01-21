@@ -1,4 +1,1 @@
-export const BACKEND_URL =
-  import.meta.env.MODE === 'development'
-    ? 'http://localhost:3000'
-    : 'https://team3pixel.herokuapp.com';
+export const BACKEND_URL = 'https://team3pixel.herokuapp.com';
