@@ -6,12 +6,15 @@ import { App } from './App';
 
 import 'normalize.css';
 import './index.css';
+import { State } from './state/State';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
+    <State>
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </State>
   </React.StrictMode>,
   document.getElementById('root'),
 );
