@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchNewAccessToken, fetchUser } from './auth.service';
+import { fetchNewAccessToken, fetchUser } from '../../services/auth/auth.service';
 
 export const UserFetcher = () => {
   const dispatch = useDispatch();

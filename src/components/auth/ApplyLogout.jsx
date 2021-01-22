@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { BACKEND_URL } from '../../config';
-import { Actions } from '../../state/actions';
+import { Actions } from '../../state/Actions';
 import { useNavigation } from '../../hooks/useNavigation';
 
 export const ApplyLogout = () => {
