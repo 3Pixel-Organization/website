@@ -1,5 +1,6 @@
 import { FaDiscord } from 'react-icons/fa';
 
+import { BACKEND_URL } from '../../config';
 import { useNavigation } from '../../hooks/useNavigation';
 import classes from './DiscordButton.module.css';
 
@@ -8,7 +9,7 @@ export const DiscordButton = () => {
   return (
     <button
       className={classes.DiscordButton}
-      onClick={() => navigate('http://localhost:3000/auth/discord')}
+      onClick={() => navigate(`${BACKEND_URL}/auth/discord`)}
     >
       {<FaDiscord size={32} />} Login with discord
     </button>
