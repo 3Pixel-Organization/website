@@ -4,7 +4,19 @@ export const useNavigation = () => {
   const history = useHistory();
 
   return {
-    navigate: (where) => history.push(where),
-    makeNavigation: (where) => () => history.push(where),
+    navigate: (where) => {
+      if (where.match(/^http[s]?:\/\//)) {
+        window.location = where;
+        return;
+      }
+      history.push(where);
+    },
+    makeNavigation: (where) => () => {
+      if (where.match(/^http[s]?:\/\//)) {
+        window.location = where;
+        return;
+      }
+      history.push(where);
+    },
   };
 };

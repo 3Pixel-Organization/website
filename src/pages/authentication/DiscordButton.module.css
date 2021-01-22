@@ -1,0 +1,23 @@
+.DiscordButton {
+  width: 10rem;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  cursor: pointer;
+  color: white;
+  background-color: #7289da;
+  border: none;
+  border-radius: 0.125rem;
+  transition: filter 0.05s ease-out;
+  outline: none;
+}
+
+.DiscordButton:hover {
+  filter: brightness(1.1);
+}
+
+.DiscordButton:active {
+  filter: brightness(0.9);
+}

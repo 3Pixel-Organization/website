@@ -18,6 +18,10 @@
   justify-content: center;
 }
 
+.JustifyStart {
+  justify-content: flex-start;
+}
+
 .AlignCenter {
   align-items: center;
 }
