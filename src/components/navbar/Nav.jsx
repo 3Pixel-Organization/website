@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { HiMenu } from 'react-icons/hi';
 
-import classes from './Navbar.module.css';
-import { Container } from '../container/Container';
-import { Drawer } from '../drawer/Drawer';
+import { Container } from 'components/container/Container';
+import { Drawer } from 'components/drawer/Drawer';
+import classes from 'components/navbar/Navbar.module.css';
 
 const RegularMenu = (children) => (
   <Container as='ul' style={{ justifyContent: 'flex-end' }} alignCenter row fluid>

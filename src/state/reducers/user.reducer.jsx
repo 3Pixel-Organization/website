@@ -1,5 +1,6 @@
 import produce from 'immer';
-import { Actions } from '../Actions';
+
+import { Actions } from 'state/Actions';
 
 const initialState = {
   user: null,

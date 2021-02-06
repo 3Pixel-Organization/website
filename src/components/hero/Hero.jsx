@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container } from '../container/Container';
 
-import classes from './Hero.module.css';
+import { Container } from 'components/container/Container';
+import classes from 'components/hero/Hero.module.css';
 
 export const Hero = ({ title, subtitle, image, cta }) => {
   return (
@@ -10,7 +10,7 @@ export const Hero = ({ title, subtitle, image, cta }) => {
         className={classes.BackgroundBlur}
         style={{ backgroundImage: `url(${image})` }}
         aria-hidden={true}
-      ></div>
+      />
       <h1 className={classes.Title}>{title}</h1>
       <p className={classes.Subtitle}>{subtitle}</p>
       {cta}

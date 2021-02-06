@@ -1,8 +1,8 @@
 import { FaDiscord } from 'react-icons/fa';
 
-import { BACKEND_URL } from '../../config';
-import { useNavigation } from '../../hooks/useNavigation';
-import classes from './DiscordButton.module.css';
+import { BACKEND_URL } from 'config';
+import { useNavigation } from 'hooks/useNavigation';
+import classes from 'pages/authentication/DiscordButton.module.css';
 
 export const DiscordButton = () => {
   const { navigate } = useNavigation();

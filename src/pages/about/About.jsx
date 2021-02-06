@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Page } from '../../components/page/Page';
-import { Hero } from '../../components/hero/Hero';
-import { Card } from '../../components/card/Card';
-import HeroImage from '../../assets/hero.jpg';
+import { Page } from 'components/page/Page';
+import { Hero } from 'components/hero/Hero';
+import { Card } from 'components/card/Card';
+import HeroImage from 'assets/hero.jpg';
 
 export const About = () => {
   return (

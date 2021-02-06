@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Container.module.css';
+import classes from 'components/container/Container.module.css';
 
 export const Container = ({
   children,

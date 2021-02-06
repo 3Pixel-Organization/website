@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { Container } from '../../components/container/Container';
-import { Hero } from '../../components/hero/Hero';
-import { Card } from '../../components/card/Card';
-import HeroImage from '../../assets/hero.jpg';
-import { Video } from './Video';
-import { Page } from '../../components/page/Page';
+import HeroImage from 'assets/hero.jpg';
+import { Container } from 'components/container/Container';
+import { Hero } from 'components/hero/Hero';
+import { Card } from 'components/card/Card';
+import { Page } from 'components/page/Page';
+
+import { Video } from 'pages/home/Video';
 
 export const Home = () => {
   return (

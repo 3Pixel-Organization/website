@@ -2,12 +2,12 @@ import React from 'react';
 import { FiLogIn } from 'react-icons/fi';
 import { HiUserCircle } from 'react-icons/hi';
 
-import classes from './Navbar.module.css';
-import logo from '../../assets/logo.png';
-import { Container } from '../container/Container';
-import { useNavigation } from '../../hooks/useNavigation';
-import { NavItem } from './NavItem';
-import { Nav } from './Nav';
+import logo from 'assets/logo.png';
+import classes from 'components/navbar/Navbar.module.css';
+import { Container } from 'components/container/Container';
+import { useNavigation } from 'hooks/useNavigation';
+import { NavItem } from 'components/navbar/NavItem';
+import { Nav } from 'components/navbar/Nav';
 
 export const Navbar = () => {
   const { makeNavigation } = useNavigation();

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container } from '../container/Container';
 
-import classes from './Drawer.module.css';
+import classes from 'components/drawer/Drawer.module.css';
+import { Container } from 'components/container/Container';
 
 export const Drawer = ({ children, open, onClose }) => {
   const navItemClick = (e) => {
@@ -15,7 +15,7 @@ export const Drawer = ({ children, open, onClose }) => {
         className={classes.Backdrop}
         style={{ display: open ? 'block' : 'none' }}
         onClick={onClose}
-      ></div>
+      />
       <Container
         className={classes.Drawer}
         style={{ transform: open ? 'translateX(0px)' : 'translateX(60vw)' }}

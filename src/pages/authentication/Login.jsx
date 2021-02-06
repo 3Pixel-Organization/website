@@ -1,12 +1,13 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { Alert } from '../../components/alert/Alert';
-import { Container } from '../../components/container/Container';
 
-import { Page } from '../../components/page/Page';
-import { useNavigation } from '../../hooks/useNavigation';
-import { useParams } from '../../hooks/useParams';
-import { Actions } from '../../state/Actions';
-import { DiscordButton } from './DiscordButton';
+import { Actions } from 'state/Actions';
+import { useNavigation } from 'hooks/useNavigation';
+import { useParams } from 'hooks/useParams';
+import { Alert } from 'components/alert/Alert';
+import { Container } from 'components/container/Container';
+import { Page } from 'components/page/Page';
+
+import { DiscordButton } from 'pages/authentication/DiscordButton';
 
 export const Login = () => {
   const { navigate } = useNavigation();

@@ -3,14 +3,14 @@ import { Switch, Route } from 'react-router-dom';
 // 👆 Dependencies
 
 // 👇 Project Components
-import { Footer } from './components/footer/Footer';
-import { Navbar } from './components/navbar/Navbar';
-import { Page } from './components/page/Page';
-import { About } from './pages/about/About';
-import { Home } from './pages/home/Home';
-import { UserFetcher } from './components/auth/UserFetcher';
-import { Login } from './pages/authentication/Login';
-import { ApplyLogout } from './components/auth/ApplyLogout';
+import { Footer } from 'components/footer/Footer';
+import { Navbar } from 'components/navbar/Navbar';
+import { Page } from 'components/page/Page';
+import { About } from 'pages/about/About';
+import { Home } from 'pages/home/Home';
+import { UserFetcher } from 'components/auth/UserFetcher';
+import { Login } from 'pages/authentication/Login';
+import { ApplyLogout } from 'components/auth/ApplyLogout';
 
 export const App = () => {
   return (

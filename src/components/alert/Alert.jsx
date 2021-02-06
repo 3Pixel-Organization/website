@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Alert.module.css';
+import classes from 'components/alert/Alert.module.css';
 
 export const Alert = ({ type, className, children, center, ...otherProps }) => {
   let css = classes.Alert;

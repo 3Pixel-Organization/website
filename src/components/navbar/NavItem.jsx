@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-import classes from './Navbar.module.css';
+import classes from 'components/navbar/Navbar.module.css';
 
 export const NavItem = ({ text, link, icon, loggedIn, loggedOut }) => {
   const auth = useSelector((state) => state.auth);

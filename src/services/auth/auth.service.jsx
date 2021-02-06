@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-import { BACKEND_URL } from '../../config';
-import { Actions } from '../../state/Actions';
+import { BACKEND_URL } from 'config';
+import { Actions } from 'state/Actions';
 
 export const fetchNewAccessToken = (auth, dispatch) => {
   axios
