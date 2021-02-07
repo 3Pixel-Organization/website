@@ -1,6 +1,7 @@
 import produce from 'immer';
 
 import { Actions } from 'state/Actions';
+import { setAccessToken } from '../../modules/authentication/services/Axios';
 
 const initialState = {
   user: null,
@@ -17,6 +18,7 @@ export const userReducer = produce((draft, action) => {
       break;
     case Actions.UPDATE_ACCESS_TOKEN:
       draft.tokens.access = action.payload;
+      setAccessToken(action.payload);
       break;
     case Actions.LOGIN:
       draft.user = action.payload.user;
