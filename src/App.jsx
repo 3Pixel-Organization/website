@@ -3,36 +3,30 @@ import { Switch, Route } from 'react-router-dom';
 // 👆 Dependencies
 
 // 👇 Project Components
-import { Footer } from 'components/footer/Footer';
-import { Navbar } from 'components/navbar/Navbar';
-import { Page } from 'components/page/Page';
-import { About } from 'pages/about/About';
-import { Home } from 'pages/home/Home';
-import { UserFetcher } from 'components/auth/UserFetcher';
-import { Login } from 'pages/authentication/Login';
-import { ApplyLogout } from 'components/auth/ApplyLogout';
-import { ErrorBoundary } from 'components/error-boundary/ErrorBoundary';
-import { FallbackPage } from 'components/error-boundary/FallbackPage';
+import { ErrorBoundary, FallbackPage, Footer, Navbar, Page } from 'modules/common/components';
+import { AboutPage } from 'modules/about';
+import { HomePage } from 'modules/home';
+import { LoginPage, ApplyLogout, UserFetcher } from 'modules/authentication';
 
 export const App = () => {
   return (
     <>
       {/* This will call the api to try and login the user */}
       <UserFetcher />
-      {/* The navbar stays out of the switch because it appears in all pages */}
+      {/* The Navbar stays out of the switch because it appears in all pages */}
       <Navbar />
       <Switch>
         <Route path="/" exact>
-          <Home />
+          <HomePage />
         </Route>
         <Route path="/about" exact>
           <ErrorBoundary FallbackComponent={FallbackPage}>
-            <About />
+            <AboutPage />
           </ErrorBoundary>
         </Route>
         <Route path="/login" exact>
           <ErrorBoundary FallbackComponent={FallbackPage}>
-            <Login />
+            <LoginPage />
           </ErrorBoundary>
         </Route>
         <Route path="/logout" exact>
