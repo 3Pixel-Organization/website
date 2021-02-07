@@ -3,16 +3,16 @@ import { Switch, Route } from 'react-router-dom';
 // 👆 Dependencies
 
 // 👇 Project Components
-import { Footer } from 'components/footer/Footer';
-import { Navbar } from 'components/navbar/Navbar';
-import { Page } from 'components/page/Page';
-import { About } from 'pages/about/About';
-import { Home } from 'pages/home/Home';
-import { UserFetcher } from 'components/auth/UserFetcher';
-import { Login } from 'pages/authentication/Login';
-import { ApplyLogout } from 'components/auth/ApplyLogout';
-import { ErrorBoundary } from 'components/error-boundary/ErrorBoundary';
-import { FallbackPage } from 'components/error-boundary/FallbackPage';
+import { Footer } from 'modules/common/components/footer/Footer';
+import { Navbar } from 'modules/common/components/navbar/Navbar';
+import { Page } from 'modules/common/components/page/Page';
+import { About } from 'modules/about/pages/About';
+import { Home } from 'modules/home/pages/Home';
+import { UserFetcher } from 'modules/authentication/components/user-fetcher/UserFetcher';
+import { Login } from 'modules/authentication/pages/Login';
+import { ApplyLogout } from 'modules/authentication/components/apply-logout/ApplyLogout';
+import { ErrorBoundary } from 'modules/common/components/error-boundary/ErrorBoundary';
+import { FallbackPage } from 'modules/common/components/error-boundary/FallbackPage';
 
 export const App = () => {
   return (
