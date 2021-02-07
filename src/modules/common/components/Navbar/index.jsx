@@ -9,19 +9,41 @@ import { useNavigation } from 'hooks/useNavigation';
 import { NavItem } from 'modules/common/components/Navbar/NavItem/NavItem';
 import { Nav } from 'modules/common/components/Navbar/Nav/Nav';
 
+const links = [
+  {
+    text: 'Home',
+    link: '/',
+  },
+  {
+    text: 'About Us',
+    link: '/about',
+  },
+  {
+    text: 'Sign In',
+    link: '/login',
+    icon: <FiLogIn />,
+    loggedOut: true,
+  },
+  {
+    text: '',
+    link: '/profile',
+    icon: <HiUserCircle />,
+    loggedIn: true,
+  },
+];
+
 export const Navbar = () => {
   const { makeNavigation } = useNavigation();
 
   return (
     <Container style={{ background: 'black', minHeight: '4rem' }} justifyCenter row>
       <div className={classes.Brand} style={{ cursor: 'pointer' }} onClick={makeNavigation('/')}>
-        <img className={classes.BrandImage} src={logo} alt='Team 3Pixel logo' /> 3Pixel
+        <img className={classes.BrandImage} src={logo} alt="Team 3Pixel logo" /> 3Pixel
       </div>
       <Nav>
-        <NavItem text='Home' link='/' />
-        <NavItem text='About Us' link='/about' />
-        <NavItem text='Sign In' link='/login' icon={<FiLogIn />} loggedOut />
-        <NavItem text='' link='/profile' icon={<HiUserCircle size={24} />} loggedIn />
+        {links.map((link) => (
+          <NavItem key={'Nav item ' + link.text} {...link} />
+        ))}
       </Nav>
     </Container>
   );
