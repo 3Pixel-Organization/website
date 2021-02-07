@@ -7,7 +7,7 @@ import HeroImage from 'assets/hero.jpg';
 
 export const About = () => {
   return (
-    <Page hero={<Hero title='About Us' subtitle='This is what we do' image={HeroImage} />}>
+    <Page hero={<Hero title="About Us" subtitle="This is what we do" image={HeroImage} />}>
       <Card style={{ margin: '2rem 0' }}>
         <h1>🎮 Team 3Pixel</h1>
         <hr />
@@ -24,7 +24,7 @@ export const About = () => {
         <hr />
         <p>
           <strong>Discord</strong>{' '}
-          <a target='_blank' rel='noreferrer' href='https://discord.gg/BS6BVMJ'>
+          <a target="_blank" rel="noreferrer" href="https://discord.gg/BS6BVMJ">
             https://discord.gg/BS6BVMJ
           </a>
         </p>

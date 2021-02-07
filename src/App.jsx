@@ -11,6 +11,8 @@ import { Home } from 'pages/home/Home';
 import { UserFetcher } from 'components/auth/UserFetcher';
 import { Login } from 'pages/authentication/Login';
 import { ApplyLogout } from 'components/auth/ApplyLogout';
+import { ErrorBoundary } from 'components/error-boundary/ErrorBoundary';
+import { FallbackPage } from 'components/error-boundary/FallbackPage';
 
 export const App = () => {
   return (
@@ -20,19 +22,25 @@ export const App = () => {
       {/* The navbar stays out of the switch because it appears in all pages */}
       <Navbar />
       <Switch>
-        <Route path='/' exact>
+        <Route path="/" exact>
           <Home />
         </Route>
-        <Route path='/about' exact>
-          <About />
+        <Route path="/about" exact>
+          <ErrorBoundary FallbackComponent={FallbackPage}>
+            <About />
+          </ErrorBoundary>
         </Route>
-        <Route path='/login' exact>
-          <Login />
+        <Route path="/login" exact>
+          <ErrorBoundary FallbackComponent={FallbackPage}>
+            <Login />
+          </ErrorBoundary>
         </Route>
-        <Route path='/logout' exact>
-          <ApplyLogout />
+        <Route path="/logout" exact>
+          <ErrorBoundary FallbackComponent={FallbackPage}>
+            <ApplyLogout />
+          </ErrorBoundary>
         </Route>
-        <Route path='/'>
+        <Route path="/">
           <Page alignCenter>
             <h1>Uh oh. There is nothing here...</h1>
           </Page>

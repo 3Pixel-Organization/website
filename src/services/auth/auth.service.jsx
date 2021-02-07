@@ -12,7 +12,7 @@ export const fetchNewAccessToken = (auth, dispatch) => {
       dispatch({ type: Actions.UPDATE_ACCESS_TOKEN, payload: res.data.token });
     })
     .catch((err) => {
-      if (err.response.status === 403 || err.response.status === 401) {
+      if (err.response?.status === 403 || err.response?.status === 401) {
         dispatch({ type: Actions.LOGOUT });
       }
     });
