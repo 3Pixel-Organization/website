@@ -16,6 +16,10 @@ If you need help getting started PM **Kaffe#9547** on discord.
     -   `npm start`
 -   The site should open on your browser. While the development server is running your changes will reflect on the browser. Head down to [#Learn More](#learn-more) for resources to learn react.
 
+## Concepts and Guides
+
+After you've setup the project locally study the [concepts and read the guides](./docs) to start developing.
+
 ## Available Scripts
 
 In the project directory, you can run:
