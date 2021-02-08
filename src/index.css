@@ -41,6 +41,7 @@ h4,
 h5,
 h6 {
   font-family: 'Kufam', sans-serif !important;
+  margin: 1rem 0;
 }
 
 p {

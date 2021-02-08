@@ -15,10 +15,6 @@ const links = [
     link: '/',
   },
   {
-    text: 'About Us',
-    link: '/about',
-  },
-  {
     text: 'Sign In',
     link: '/login',
     icon: <FiLogIn />,
