@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 
 // 👇 Project Components
 import { ErrorBoundary, FallbackPage, Footer, Navbar, Page } from 'modules/common/components';
-import { AboutPage } from 'modules/about';
 import { HomePage } from 'modules/home';
 import { LoginPage, ApplyLogout, UserFetcher } from 'modules/authentication';
 
@@ -18,11 +17,6 @@ export const App = () => {
       <Switch>
         <Route path="/" exact>
           <HomePage />
-        </Route>
-        <Route path="/about" exact>
-          <ErrorBoundary FallbackComponent={FallbackPage}>
-            <AboutPage />
-          </ErrorBoundary>
         </Route>
         <Route path="/login" exact>
           <ErrorBoundary FallbackComponent={FallbackPage}>
