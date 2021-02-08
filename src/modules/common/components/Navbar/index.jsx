@@ -32,7 +32,7 @@ export const Navbar = () => {
   const { makeNavigation } = useNavigation();
 
   return (
-    <Container style={{ background: 'black', minHeight: '4rem' }} justifyCenter row>
+    <Container style={{ background: 'black', minHeight: '4rem' }} justifyCenter row fluid>
       <div className={classes.Brand} style={{ cursor: 'pointer' }} onClick={makeNavigation('/')}>
         <img className={classes.BrandImage} src={logo} alt="Team 3Pixel logo" /> 3Pixel
       </div>
