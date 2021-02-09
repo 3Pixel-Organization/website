@@ -8,3 +8,4 @@ export { Footer } from 'modules/common/components/Footer';
 export { Hero } from 'modules/common/components/Hero';
 export { Navbar } from 'modules/common/components/Navbar';
 export { Page } from 'modules/common/components/Page';
+export { Route } from 'modules/common/components/Route';
