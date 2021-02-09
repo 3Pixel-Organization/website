@@ -6,7 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import { ErrorBoundary, FallbackPage, Footer, Navbar } from 'modules/common/components';
 import { HomePage } from 'modules/home';
 import { LoginPage, ApplyLogout, UserFetcher } from 'modules/authentication';
-import { NotFoundPage } from './modules/common/pages/NotFoundPage';
+import { NotFoundPage } from 'modules/common/pages/NotFoundPage';
 
 export const App = () => {
   return (
