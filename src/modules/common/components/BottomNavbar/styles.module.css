@@ -20,6 +20,21 @@
   align-items: center;
 }
 
+.NavItem::before {
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: all 100ms ease-out;
+}
+
+.NavItem:hover::before {
+  width: 4rem;
+}
+
 .NavItem a {
   width: 100%;
   height: 100%;
@@ -42,9 +57,11 @@
   .NavbarContainer {
     min-height: revert;
   }
+
   .BottomNavBar {
     flex-direction: column;
   }
+
   .NavItem {
     height: 4rem;
     width: 100%;
