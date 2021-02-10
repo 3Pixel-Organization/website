@@ -7,6 +7,7 @@ import { Footer, Navbar, Route } from 'modules/common/components';
 import { HomePage } from 'modules/home';
 import { LoginPage, ApplyLogout, UserFetcher } from 'modules/authentication';
 import { NotFoundPage } from 'modules/common/pages/NotFoundPage';
+import { CreateNewsPostPage } from 'modules/news';
 
 export const App = () => {
   return (
@@ -24,6 +25,9 @@ export const App = () => {
         </Route>
         <Route path="/logout" exact>
           <ApplyLogout />
+        </Route>
+        <Route path="/news/create" exact>
+          <CreateNewsPostPage />
         </Route>
         <Route path="/">
           <NotFoundPage />
