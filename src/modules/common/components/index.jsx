@@ -9,3 +9,5 @@ export { Hero } from 'modules/common/components/Hero';
 export { Navbar } from 'modules/common/components/Navbar';
 export { Page } from 'modules/common/components/Page';
 export { Route } from 'modules/common/components/Route';
+export { ContentEditor } from 'modules/common/components/ContentEditor';
+export * from 'modules/common/components/Input';
