@@ -13,7 +13,6 @@ import {
   Container,
   Row,
   Col,
-  Flex,
 } from 'modules/common/components';
 import { useNavigation } from 'hooks/useNavigation';
 

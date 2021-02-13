@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f778c73-56da-46fc-8fa8-33048ab8f371" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/common/components/Layout/Flex.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/authentication/pages/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/authentication/pages/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/BottomNavbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/BottomNavbar/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Container/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Container/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Layout/styles.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Drawer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Drawer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Footer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Hero/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Hero/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Hero/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Hero/styles.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Navbar/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Navbar/Nav/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Navbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Navbar/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Page/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Page/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/pages/NotFoundPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/pages/NotFoundPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/pages/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/pages/HomePage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/news/pages/CreateNewsPostPage/CreateNewsPostPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/news/pages/CreateNewsPostPage/CreateNewsPostPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/news/pages/CreateNewsPostPage/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/news/pages/CreateNewsPostPage/styles.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/news/pages/ReadNewsPostPage/ReadNewsPostPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/news/pages/ReadNewsPostPage/ReadNewsPostPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/news/services/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/news/services/News.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +128,7 @@
       <workItem from="1613079389440" duration="594000" />
       <workItem from="1613090366976" duration="5373000" />
       <workItem from="1613135461271" duration="6000" />
-      <workItem from="1613222340940" duration="10888000" />
+      <workItem from="1613222340940" duration="10895000" />
     </task>
     <task id="LOCAL-00001" summary="wip(news): rename posts routes to news">
       <created>1612878508778</created>
