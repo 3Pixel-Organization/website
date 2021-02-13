@@ -1,6 +1,6 @@
 const { useLocation } = require('react-router-dom');
 
-export const useParams = () => {
+export const useQueryParams = () => {
   const { search } = useLocation();
   const u = new URLSearchParams(search);
 

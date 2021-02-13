@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 // 👆 Dependencies
 
 // 👇 Project Components
@@ -7,7 +8,7 @@ import { Footer, Navbar, Route } from 'modules/common/components';
 import { HomePage } from 'modules/home';
 import { LoginPage, ApplyLogout, UserFetcher } from 'modules/authentication';
 import { NotFoundPage } from 'modules/common/pages/NotFoundPage';
-import { CreateNewsPostPage } from 'modules/news';
+import { CreateNewsPostPage, ReadNewsPostPage } from 'modules/news';
 
 export const App = () => {
   return (
@@ -29,11 +30,15 @@ export const App = () => {
         <Route path="/news/create" exact>
           <CreateNewsPostPage />
         </Route>
+        <Route path="/news/:slug" exact>
+          <ReadNewsPostPage />
+        </Route>
         <Route path="/">
           <NotFoundPage />
         </Route>
       </Switch>
       <Footer />
+      <ToastContainer />
     </>
   );
 };

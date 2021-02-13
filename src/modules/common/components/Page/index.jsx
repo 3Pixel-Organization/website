@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import { Container } from 'modules/common/components/Container';
 
@@ -12,7 +13,8 @@ export const Page = ({ children, hero, className = '', ...otherProps }) => {
         justifyCenter
         column
         fadeIn
-        className={classes.Page + ' ' + className}
+        fluid
+        className={classnames(classes.Page, classes.Wide, className)}
         {...otherProps}
       >
         {children}

@@ -14,7 +14,7 @@
   font-size: 1.5rem;
 }
 
-.PostDetails button {
+.PostDetails .SubmitButton {
   width: 8rem;
   height: 2rem;
 }

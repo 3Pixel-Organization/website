@@ -1,6 +1,6 @@
 import { Actions } from 'state/Actions';
 
-import { axios } from 'modules/authentication';
+import { axios } from 'modules/common/services/Axios';
 
 export const fetchNewAccessToken = (auth, dispatch) => {
   axios
