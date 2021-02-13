@@ -10,6 +10,9 @@
   min-width: 5rem;
   width: 10vw;
   max-width: 16rem;
+  min-height: 5rem;
+  height: 10vw;
+  max-height: 16rem;
   position: relative;
 
   border: 2px solid rgba(255, 255, 255, 0.05);
