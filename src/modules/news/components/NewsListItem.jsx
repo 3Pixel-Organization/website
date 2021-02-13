@@ -24,6 +24,9 @@ export const NewsListItem = ({ post, blank = false }) => {
     );
   }
 
+  const description =
+    post.description.length > 100 ? post.description.substr(0, 150) + '...' : post.description;
+
   return (
     <Card as={Link} to={`/news/${post.slug}`} className={classes.NewsListItem}>
       <div className={classes.Image}>
@@ -31,7 +34,7 @@ export const NewsListItem = ({ post, blank = false }) => {
       </div>
       <div className={classes.Text}>
         <h3 className={classes.Title}>{post.title}</h3>
-        <p className={classes.Description}>{post.description}</p>
+        <p className={classes.Description}>{description}</p>
       </div>
     </Card>
   );
