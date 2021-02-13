@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import { Container } from 'modules/common/components/Container';
+import { Flex } from 'modules/common/components/Layout';
 
 import classes from 'modules/common/components/Page/styles.module.css';
 
@@ -9,7 +9,7 @@ export const Page = ({ children, hero, className = '', ...otherProps }) => {
   return (
     <>
       {!!hero && hero}
-      <Container
+      <Flex
         justifyCenter
         column
         fadeIn
@@ -18,7 +18,7 @@ export const Page = ({ children, hero, className = '', ...otherProps }) => {
         {...otherProps}
       >
         {children}
-      </Container>
+      </Flex>
     </>
   );
 };

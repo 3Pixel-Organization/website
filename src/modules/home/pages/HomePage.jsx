@@ -1,26 +1,22 @@
 import React from 'react';
 import { FaDiscord, FaTwitter, FaYoutube } from 'react-icons/fa';
-import { Container as GridContainer, Col, Row } from 'react-grid-system';
 
 import HeroImage from 'assets/hero.jpg';
-import { Container } from 'modules/common/components/Container';
-import { Hero } from 'modules/common/components/Hero';
-import { Card } from 'modules/common/components/Card';
-import { Page } from 'modules/common/components/Page';
+import { Flex, Hero, Card, Page, Container, Row, Col } from 'modules/common/components';
 
 import { Video } from 'modules/home/components/Video';
 import { NewsList } from 'modules/news';
 
 export const HomePage = () => {
   return (
-    <Page wide hero={<Hero title="Team 3Pixel" subtitle="We make games." image={HeroImage} />}>
-      <GridContainer>
+    <Page hero={<Hero title="Team 3Pixel" subtitle="We make games." image={HeroImage} />}>
+      <Container>
         <Row>
           <Col lg={7}>
             <Card>
               <h1>🎮 Team 3Pixel</h1>
               <hr />
-              <Container>
+              <Flex>
                 <p>
                   We are group of people starting to build fast games or flash project games. We are
                   working in those games to filter out people we can't rely on from people we can
@@ -28,10 +24,10 @@ export const HomePage = () => {
                   building a company and staying as employees. As of now on game releases we will
                   all gain portfolio and letter of recommendation.
                 </p>
-              </Container>
+              </Flex>
               <h2>🖥 Our Links</h2>
               <hr />
-              <Container>
+              <Flex>
                 <p>
                   <strong>{<FaDiscord />} Discord</strong>{' '}
                   <a target="_blank" rel="noreferrer" href="https://discord.gg/BS6BVMJ">
@@ -54,18 +50,18 @@ export const HomePage = () => {
                     Youtube Channel
                   </a>
                 </p>
-              </Container>
+              </Flex>
               <hr />
-              <Container justifyCenter alignCenter fluid>
+              <Flex justifyCenter alignCenter fluid>
                 <Video embed="https://www.youtube.com/embed/ce7gTqGik2s" />
-              </Container>
+              </Flex>
             </Card>
           </Col>
           <Col lg={5}>
             <NewsList />
           </Col>
         </Row>
-      </GridContainer>
+      </Container>
     </Page>
   );
 };

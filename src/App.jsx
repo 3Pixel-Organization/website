@@ -13,6 +13,7 @@ import { CreateNewsPostPage, ReadNewsPostPage } from 'modules/news';
 export const App = () => {
   return (
     <>
+      <ToastContainer />
       {/* This will call the api to try and login the user */}
       <UserFetcher />
       {/* The Navbar stays out of the switch because it appears in all pages */}
@@ -38,7 +39,6 @@ export const App = () => {
         </Route>
       </Switch>
       <Footer />
-      <ToastContainer />
     </>
   );
 };

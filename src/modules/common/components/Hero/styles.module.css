@@ -5,6 +5,10 @@
   background: black;
 }
 
+.Compact {
+  height: auto;
+}
+
 .Hero > * {
   z-index: 1;
 }
@@ -16,7 +20,8 @@
 
 .Subtitle {
   font-size: 1.5rem;
-  box-shadow: 0px 2px 1px rgb(216, 27, 27), 0px 5px 1px rgb(36, 11, 126);
+  box-shadow: 0 2px 1px rgb(216, 27, 27), 0px 5px 1px rgb(36, 11, 126);
+  margin-bottom: 0.5rem;
 }
 
 .BackgroundBlur {

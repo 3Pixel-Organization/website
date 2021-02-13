@@ -1,14 +1,19 @@
 import React from 'react';
 
 import HeroImage from 'assets/hero.jpg';
-import { Container } from 'modules/common/components/Container';
-import { BottomNavbar } from 'modules/common/components/BottomNavbar';
+import { BottomNavbar, Flex } from 'modules/common/components';
 import classes from 'modules/common/components/Hero/styles.module.css';
+import classnames from 'classnames';
 
-export const Hero = ({ title, subtitle, image = HeroImage, cta }) => {
+export const Hero = ({ title, subtitle, image = HeroImage, cta, compact = false }) => {
   return (
     <>
-      <Container className={classes.Hero} justifyCenter alignCenter fluid>
+      <Flex
+        className={classnames(classes.Hero, { [classes.Compact]: compact })}
+        justifyCenter
+        alignCenter
+        fluid
+      >
         <div
           className={classes.BackgroundBlur}
           style={{ backgroundImage: `url(${image})` }}
@@ -17,7 +22,7 @@ export const Hero = ({ title, subtitle, image = HeroImage, cta }) => {
         <h1 className={classes.Title}>{title}</h1>
         <p className={classes.Subtitle}>{subtitle}</p>
         {cta}
-      </Container>
+      </Flex>
       <BottomNavbar />
     </>
   );

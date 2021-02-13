@@ -1,5 +1,3 @@
-import { toast } from 'react-toastify';
-
 import { axios } from 'modules/common/services/Axios';
 
 export const fetchPostList = async () => {
@@ -29,29 +27,11 @@ export const fetchPostBySlug = async ({ queryKey }) => {
   return res.data;
 };
 
-export const createPost = (post, token) => {
-  if (!token) return;
-
+export const createPost = (post) => {
   // block transform necessary for api
   post.content = post.content.map(formatPostBlocksForBackend);
 
-  return axios
-    .post('/news', post)
-    .then((res) => res.data.slug)
-    .catch((err) => {
-      console.error(err.response);
-      const data = err.response.data;
-      const errorSpan = (
-        <span>
-          Could not create post.
-          <br />
-          {data?.message ?? data?.[0]?.message ?? (typeof data === 'string' ? data : '')}
-        </span>
-      );
-      toast(errorSpan, {
-        type: 'error',
-      });
-    });
+  return axios.post('/news', post).then((res) => res.data.slug);
 };
 
 function formatPostBlocksForBackend(block) {

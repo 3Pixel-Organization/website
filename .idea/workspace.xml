@@ -2,34 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f778c73-56da-46fc-8fa8-33048ab8f371" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../3p-api/src/models/post.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../3p-api/src/models/post.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3p-api/src/services/news/posts.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../3p-api/src/services/news/posts.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/3p-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/3p-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/Layout/Flex.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useParams.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useQueryParams.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/authentication/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/authentication/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/authentication/pages/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/authentication/pages/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/authentication/services/Authentication.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/authentication/services/Authentication.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/authentication/services/Axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/services/Axios.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/ContentEditor/EditorJSTools.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/ContentEditor/EditorJSTools.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Footer/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Footer/styles.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Input/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Input/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Input/TextArea.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Input/TextArea.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Input/TextInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Input/TextInput.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Input/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Input/styles.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/BottomNavbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/BottomNavbar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Container/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Container/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Layout/styles.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Drawer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Drawer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Footer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Hero/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Hero/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Hero/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Hero/styles.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Navbar/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Navbar/Nav/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Navbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Navbar/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/common/components/Page/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Page/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Page/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Page/styles.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Video/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Video/styles.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/pages/NotFoundPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/pages/NotFoundPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/home/pages/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/pages/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/news/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/news/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/news/pages/CreateNewsPostPage/CreateNewsPostPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/news/pages/CreateNewsPostPage/CreateNewsPostPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/news/pages/CreateNewsPostPage/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/news/pages/CreateNewsPostPage/styles.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/reducers/user.reducer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/reducers/user.reducer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/news/pages/ReadNewsPostPage/ReadNewsPostPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/news/pages/ReadNewsPostPage/ReadNewsPostPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/news/services/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/news/services/News.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,11 +91,11 @@
       <recent name="C:\code\web\3p-web\src\components\error-boundary" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\web\3p-web\src\modules\common\components\Layout" />
       <recent name="C:\code\web\3p-web\src\modules\common\services" />
       <recent name="C:\code\web\3p-web\src\modules\news\pages\CreateNewsPostPage" />
       <recent name="C:\code\web\3p-web\src\modules\common\components\ErrorBoundary\FallbackPage" />
       <recent name="C:\code\web\3p-web\src\modules\common\components\ErrorBoundary\FallBackComponent" />
-      <recent name="C:\code\web\3p-web\src\modules\common\components\Navbar\NavItem" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -155,7 +148,7 @@
       <workItem from="1613079389440" duration="594000" />
       <workItem from="1613090366976" duration="5373000" />
       <workItem from="1613135461271" duration="6000" />
-      <workItem from="1613222340940" duration="3086000" />
+      <workItem from="1613222340940" duration="10888000" />
     </task>
     <task id="LOCAL-00001" summary="wip(news): rename posts routes to news">
       <created>1612878508778</created>
