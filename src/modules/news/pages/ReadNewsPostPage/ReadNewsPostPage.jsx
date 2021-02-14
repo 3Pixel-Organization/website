@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { FaCalendarAlt } from 'react-icons/fa';
 
 import { Card, Col, Container, Flex, Hero, Page, Renderer, Row } from 'modules/common/components';
-// import classes from 'modules/news/pages/ReadNewsPostPage/styles.module.css';
 import { fetchPostBySlug } from 'modules/news/services/News';
 import { PostErrorMessage } from 'modules/news/pages/ReadNewsPostPage/PostErrorMessage';
 
@@ -14,8 +13,6 @@ export const ReadNewsPostPage = () => {
   const { data, status, error } = useQuery(['news', slug], fetchPostBySlug, {
     staleTime: 30000,
   });
-
-  console.log(data?.content);
 
   return (
     <Page hero={<Hero compact title="3Pixel News" subtitle="What have we been up to?" />}>
@@ -62,6 +59,5 @@ export const ReadNewsPostPage = () => {
 };
 
 function dateToString(date) {
-  const dateTimeFormat = { dateStyle: 'full', timeStyle: 'long' };
-  return new Intl.DateTimeFormat('en-US', dateTimeFormat).format(date);
+  return new Intl.DateTimeFormat('en-US').format(date);
 }

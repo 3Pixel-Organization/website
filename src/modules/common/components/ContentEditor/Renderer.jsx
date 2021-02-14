@@ -1,17 +1,20 @@
 import React from 'react';
-import { Flex } from '../Layout';
+
+import { Flex } from 'modules/common/components/Layout';
+
+import classes from 'modules/common/components/ContentEditor/renderer.module.css';
 
 export const Renderer = ({ type, data }) => {
   switch (type) {
     case 'paragraph':
-      return <p>{data.text}</p>;
+      return <p className={classes.Paragraph}>{data.text}</p>;
     case 'header':
       const Header = 'h' + data.level;
       return <Header>{data.text}</Header>;
     case 'simpleImage':
       return (
         <Flex fluid>
-          <img src={data.url} alt={data.caption} />
+          <img style={{ width: '100%', maxHeight: '70vh' }} src={data.url} alt={data.caption} />
         </Flex>
       );
     case 'delimiter':
@@ -20,8 +23,13 @@ export const Renderer = ({ type, data }) => {
       return (
         <ul>
           {data.items.map((item, i) => (
-            <div key={item.text+i}>
-              <input key={`${i} text - ${item.text}`} type="checkbox" checked={item.checked} disabled />
+            <div key={item.text + i}>
+              <input
+                key={`${i} text - ${item.text}`}
+                type="checkbox"
+                checked={item.checked}
+                disabled
+              />
               <label key={`label ${i} ${item.text}`}>{item.text}</label>
             </div>
           ))}
