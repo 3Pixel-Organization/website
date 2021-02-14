@@ -7,6 +7,6 @@ import { EDITORJS_TOOLS } from 'modules/common/components/ContentEditor/EditorJS
 
 export const ContentEditor = ({ data, onChange, onBlur = () => {} }) => (
   <div className={classes.ContentEditor} onBlur={onBlur}>
-    <EditorJs data={data} onChange={onChange} tools={EDITORJS_TOOLS} />
+    <EditorJs hideToolbar={false} inlineToolbar={true} data={data} onChange={onChange} tools={EDITORJS_TOOLS} />
   </div>
 );

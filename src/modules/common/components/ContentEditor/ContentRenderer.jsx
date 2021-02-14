@@ -1,51 +1,39 @@
 import React from 'react';
+import Output from 'editorjs-react-renderer';
 
-import { Flex } from 'modules/common/components/Layout';
-
-import classes from 'modules/common/components/ContentEditor/renderer.module.css';
-import classnames from 'classnames';
+import {
+  Checklist,
+  Codebox,
+  Delimiter,
+  Header,
+  Paragraph,
+  SimpleImage,
+  Table,
+  List,
+  Quote,
+} from 'modules/common/components/ContentEditor/BlockTypes';
 
 export const ContentRenderer = ({ type, data }) => {
   switch (type) {
     case 'paragraph':
-      return <p className={classes.Paragraph}>{data.text}</p>;
+      return <Paragraph data={data} />;
     case 'header':
-      const Header = 'h' + data.level;
-      return <Header>{data.text}</Header>;
+      return <Header data={data} />;
     case 'simpleImage':
-      return (
-        <Flex fluid>
-          <img style={{ width: '100%', maxHeight: '70vh' }} src={data.url} alt={data.caption} />
-        </Flex>
-      );
+      return <SimpleImage data={data} />;
     case 'delimiter':
-      return <hr />;
+      return <Delimiter />;
     case 'checklist':
-      return (
-        <Flex fluid justifyStart>
-          {data.items.map((item, i) => (
-            <Flex
-              row
-              fluid
-              justifyStart
-              alignCenter
-              key={item.text + i}
-              className={classes.CheckboxItem}
-            >
-              <Flex
-                fluid
-                justifyCenter
-                alignCenter
-                className={classnames(classes.CheckboxBox, {
-                  [classes.CheckboxChecked]: item.checked,
-                })}
-              />
-              <span className={classes.CheckboxLabel}>{item.text}</span>
-            </Flex>
-          ))}
-        </Flex>
-      );
+      return <Checklist data={data} />;
+    case 'codeBox':
+      return <Codebox type={type} data={data} />;
+    case 'table':
+      return <Table data={data} />;
+    case 'list':
+      return <List data={data} />;
+    case 'quote':
+      return <Quote data={data} />;
     default:
-      return <p>{JSON.stringify(data)}</p>;
+      return <Output data={{ blocks: [{ type, data }] }} />;
   }
 };
