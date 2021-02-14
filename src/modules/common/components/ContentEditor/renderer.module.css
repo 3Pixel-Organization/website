@@ -1,3 +1,24 @@
 .Paragraph {
   margin-bottom: 1rem;
 }
+
+.CheckboxItem {
+  margin: 0.125rem !important;
+}
+
+.CheckboxBox {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem !important;
+  border-radius: 50%;
+  background: white;
+}
+
+.CheckboxChecked::before {
+  content: '✔';
+  color: #4c758e;
+  font-size: x-large;
+}
+
+/*.CheckboxLabel {*/
+/*}*/

@@ -4,7 +4,16 @@ import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
 import { FaCalendarAlt } from 'react-icons/fa';
 
-import { Card, Col, Container, Flex, Hero, Page, Renderer, Row } from 'modules/common/components';
+import {
+  Card,
+  Col,
+  Container,
+  Flex,
+  Hero,
+  Page,
+  ContentRenderer,
+  Row,
+} from 'modules/common/components';
 import { fetchPostBySlug } from 'modules/news/services/News';
 import { PostErrorMessage } from 'modules/news/pages/ReadNewsPostPage/PostErrorMessage';
 
@@ -43,10 +52,8 @@ export const ReadNewsPostPage = () => {
                     </div>
                   )}
                   <hr />
-                  {/*<PostReadMenu post={data} />*/}
-                  {/*<Markdown>{data.content}</Markdown>*/}
                   {data.content.map((block, i) => (
-                    <Renderer key={block.type + i} type={block.type} data={block.data} />
+                    <ContentRenderer key={block.type + i} type={block.type} data={block.data} />
                   ))}
                 </Flex>
               )}
@@ -59,5 +66,9 @@ export const ReadNewsPostPage = () => {
 };
 
 function dateToString(date) {
-  return new Intl.DateTimeFormat('en-US').format(date);
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).format(date);
 }

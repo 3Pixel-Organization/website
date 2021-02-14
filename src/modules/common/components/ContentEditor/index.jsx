@@ -1,2 +1,2 @@
 export { ContentEditor } from 'modules/common/components/ContentEditor/ContentEditor';
-export { Renderer } from 'modules/common/components/ContentEditor/Renderer';
+export { ContentRenderer } from 'modules/common/components/ContentEditor/ContentRenderer';

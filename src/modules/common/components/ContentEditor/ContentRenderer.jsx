@@ -3,8 +3,9 @@ import React from 'react';
 import { Flex } from 'modules/common/components/Layout';
 
 import classes from 'modules/common/components/ContentEditor/renderer.module.css';
+import classnames from 'classnames';
 
-export const Renderer = ({ type, data }) => {
+export const ContentRenderer = ({ type, data }) => {
   switch (type) {
     case 'paragraph':
       return <p className={classes.Paragraph}>{data.text}</p>;
@@ -21,19 +22,28 @@ export const Renderer = ({ type, data }) => {
       return <hr />;
     case 'checklist':
       return (
-        <ul>
+        <Flex fluid justifyStart>
           {data.items.map((item, i) => (
-            <div key={item.text + i}>
-              <input
-                key={`${i} text - ${item.text}`}
-                type="checkbox"
-                checked={item.checked}
-                disabled
+            <Flex
+              row
+              fluid
+              justifyStart
+              alignCenter
+              key={item.text + i}
+              className={classes.CheckboxItem}
+            >
+              <Flex
+                fluid
+                justifyCenter
+                alignCenter
+                className={classnames(classes.CheckboxBox, {
+                  [classes.CheckboxChecked]: item.checked,
+                })}
               />
-              <label key={`label ${i} ${item.text}`}>{item.text}</label>
-            </div>
+              <span className={classes.CheckboxLabel}>{item.text}</span>
+            </Flex>
           ))}
-        </ul>
+        </Flex>
       );
     default:
       return <p>{JSON.stringify(data)}</p>;
