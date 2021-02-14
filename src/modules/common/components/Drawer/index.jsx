@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from 'modules/common/components/Drawer/styles.module.css';
-import { Container } from 'modules/common/components/Container';
+import { Flex } from 'modules/common/components/Layout';
 
 export const Drawer = ({ children, open, onClose }) => {
   const navItemClick = (e) => {
@@ -16,14 +16,14 @@ export const Drawer = ({ children, open, onClose }) => {
         style={{ display: open ? 'block' : 'none' }}
         onClick={onClose}
       />
-      <Container
+      <Flex
         className={classes.Drawer}
         style={{ transform: open ? 'translateX(0px)' : 'translateX(60vw)' }}
         column
         onClick={navItemClick}
       >
         {children}
-      </Container>
+      </Flex>
     </>
   );
 };

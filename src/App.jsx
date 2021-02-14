@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 // 👆 Dependencies
 
 // 👇 Project Components
@@ -7,10 +8,12 @@ import { Footer, Navbar, Route } from 'modules/common/components';
 import { HomePage } from 'modules/home';
 import { LoginPage, ApplyLogout, UserFetcher } from 'modules/authentication';
 import { NotFoundPage } from 'modules/common/pages/NotFoundPage';
+import { CreateNewsPostPage, ReadNewsPostPage } from 'modules/news';
 
 export const App = () => {
   return (
     <>
+      <ToastContainer />
       {/* This will call the api to try and login the user */}
       <UserFetcher />
       {/* The Navbar stays out of the switch because it appears in all pages */}
@@ -24,6 +27,12 @@ export const App = () => {
         </Route>
         <Route path="/logout" exact>
           <ApplyLogout />
+        </Route>
+        <Route path="/news/create" exact>
+          <CreateNewsPostPage />
+        </Route>
+        <Route path="/news/:slug" exact>
+          <ReadNewsPostPage />
         </Route>
         <Route path="/">
           <NotFoundPage />

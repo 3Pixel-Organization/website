@@ -1,0 +1,12 @@
+.ContentEditor {
+  width: 100%;
+  position: relative;
+  border: 1px solid rgb(48, 52, 54);
+  border-radius: 0.125rem;
+  background: #181a1b;
+  margin-bottom: 0.5rem;
+}
+
+.ContentEditor:focus-within {
+  box-shadow: 0 3px 18px -6px rgba(255, 255, 255, 0.3);
+}

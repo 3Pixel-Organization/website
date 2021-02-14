@@ -1,0 +1,30 @@
+.PostDetails {
+  min-width: 70vw;
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid rgb(48, 52, 54);
+  overflow: hidden;
+}
+
+.PostDetails:focus-within {
+  box-shadow: 0 3px 18px -6px rgba(255, 255, 255, 0.3);
+}
+
+.PostDetails label {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.PostDetails .SubmitButton {
+  width: 8rem;
+  height: 2rem;
+}
+
+.Tutorial {
+  border: 1px solid rgb(48, 52, 54);
+}
+
+.Tutorial ul {
+  list-style: circle;
+  padding-left: 1rem;
+}

@@ -1,7 +1,7 @@
 import produce from 'immer';
 
 import { Actions } from 'state/Actions';
-import { setAccessToken } from '../../modules/authentication/services/Axios';
+import { setAccessToken } from '../../modules/common/services/Axios';
 
 const initialState = {
   user: null,

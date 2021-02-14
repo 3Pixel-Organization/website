@@ -2,26 +2,26 @@ import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { HiMenu } from 'react-icons/hi';
 
-import { Container } from 'modules/common/components/Container';
+import { Flex } from 'modules/common/components/Layout';
 import { Drawer } from 'modules/common/components/Drawer';
 import classes from 'modules/common/components/Navbar/styles.module.css';
 
 const RegularMenu = (children) => (
-  <Container as='ul' style={{ justifyContent: 'flex-end' }} alignCenter row fluid>
+  <Flex as='ul' style={{ justifyContent: 'flex-end' }} alignCenter row fluid>
     {children}
-  </Container>
+  </Flex>
 );
 
 const MobileMenu = (children, open, setOpen) => {
   return (
-    <Container as='ul' style={{ justifyContent: 'flex-end' }} alignCenter row fluid>
+    <Flex as='ul' style={{ justifyContent: 'flex-end' }} alignCenter row fluid>
       <li className={classes.NavItem} style={{ cursor: 'pointer' }} onClick={() => setOpen(true)}>
         <HiMenu size={32} />
       </li>
       <Drawer open={open} onClose={() => setOpen(false)}>
         {children}
       </Drawer>
-    </Container>
+    </Flex>
   );
 };
 
