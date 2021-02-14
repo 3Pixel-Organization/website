@@ -4,10 +4,10 @@ import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
 import { FaCalendarAlt } from 'react-icons/fa';
 
-import { Col, Container, Hero, Page, Row } from 'modules/common/components';
+import { Card, Col, Container, Flex, Hero, Page, Renderer, Row } from 'modules/common/components';
 // import classes from 'modules/news/pages/ReadNewsPostPage/styles.module.css';
 import { fetchPostBySlug } from 'modules/news/services/News';
-import { PostErrorMessage } from './PostErrorMessage';
+import { PostErrorMessage } from 'modules/news/pages/ReadNewsPostPage/PostErrorMessage';
 
 export const ReadNewsPostPage = () => {
   const { slug } = useParams();
@@ -15,39 +15,45 @@ export const ReadNewsPostPage = () => {
     staleTime: 30000,
   });
 
+  console.log(data?.content);
+
   return (
     <Page hero={<Hero compact title="3Pixel News" subtitle="What have we been up to?" />}>
       <Container>
         <Row>
-          <Col>
-            {status === 'loading' && <h1>Loading...</h1>}
-            {status === 'error' && <PostErrorMessage error={error} />}
-            {status === 'success' && (
-              <>
-                <h1>{data.title}</h1>
-                <span>{data.description}</span>
+          <Col xs={12}>
+            <Card>
+              {status === 'loading' && <h1>Loading...</h1>}
+              {status === 'error' && <PostErrorMessage error={error} />}
+              {status === 'success' && (
+                <Flex>
+                  <h1>{data.title}</h1>
+                  <span>{data.description}</span>
 
-                <span>
-                  <Link to={`/profile/${data.author._id}`}>
-                    <strong>By</strong> {data.author.username}
-                  </Link>
-                </span>
-                <span>
-                  <FaCalendarAlt /> {dateToString(new Date(data.createdAt))}
-                </span>
-                {data.tags && (
-                  <div>
-                    {data.tags.map((tag, i) => (
-                      <span key={`${i}-tag-${tag}`}>{tag}</span>
-                    ))}
-                  </div>
-                )}
-                <hr />
-                {/*<PostReadMenu post={data} />*/}
-                {/*<Markdown>{data.content}</Markdown>*/}
-                {JSON.stringify(data.content)}
-              </>
-            )}
+                  <span>
+                    <Link to={`/profile/${data.author._id}`}>
+                      <strong>By</strong> {data.author.username}
+                    </Link>
+                  </span>
+                  <span>
+                    <FaCalendarAlt /> {dateToString(new Date(data.createdAt))}
+                  </span>
+                  {data.tags && (
+                    <div>
+                      {data.tags.map((tag, i) => (
+                        <span key={`${i}-tag-${tag}`}>{tag}</span>
+                      ))}
+                    </div>
+                  )}
+                  <hr />
+                  {/*<PostReadMenu post={data} />*/}
+                  {/*<Markdown>{data.content}</Markdown>*/}
+                  {data.content.map((block, i) => (
+                    <Renderer key={block.type + i} type={block.type} data={block.data} />
+                  ))}
+                </Flex>
+              )}
+            </Card>
           </Col>
         </Row>
       </Container>
