@@ -9,6 +9,7 @@ import { HomePage } from 'modules/home';
 import { LoginPage, ApplyLogout, UserFetcher } from 'modules/authentication';
 import { NotFoundPage } from 'modules/common/pages/NotFoundPage';
 import { CreateNewsPostPage, ReadNewsPostPage } from 'modules/news';
+import { ManagePermissionsPage } from 'modules/admin';
 
 export const App = () => {
   return (
@@ -33,6 +34,9 @@ export const App = () => {
         </Route>
         <Route path="/news/:slug" exact>
           <ReadNewsPostPage />
+        </Route>
+        <Route path="/admin/permissions" exact>
+          <ManagePermissionsPage />
         </Route>
         <Route path="/">
           <NotFoundPage />
