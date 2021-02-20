@@ -4,10 +4,10 @@ import { Actions } from 'state/Actions';
 import { setAccessToken } from '../../modules/common/services/Axios';
 
 const initialState = {
-  user: null,
+  user: 0,
   tokens: {
     refresh: localStorage.getItem('3pixel.authToken'),
-    access: null,
+    access: undefined,
   },
 };
 

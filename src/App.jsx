@@ -11,6 +11,8 @@ import { NotFoundPage } from 'modules/common/pages/NotFoundPage';
 import { CreateNewsPostPage, ReadNewsPostPage } from 'modules/news';
 import { ManagePermissionsPage } from 'modules/admin';
 
+import { PermissionGuard } from 'modules/authentication';
+
 export const App = () => {
   return (
     <>
@@ -30,13 +32,17 @@ export const App = () => {
           <ApplyLogout />
         </Route>
         <Route path="/news/create" exact>
-          <CreateNewsPostPage />
+          <PermissionGuard permission="3pixel.news.write">
+            <CreateNewsPostPage />
+          </PermissionGuard>
         </Route>
         <Route path="/news/:slug" exact>
           <ReadNewsPostPage />
         </Route>
         <Route path="/admin/permissions" exact>
-          <ManagePermissionsPage />
+          <PermissionGuard permission="3pixel.access.manage">
+            <ManagePermissionsPage />
+          </PermissionGuard>
         </Route>
         <Route path="/">
           <NotFoundPage />

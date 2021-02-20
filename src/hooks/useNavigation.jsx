@@ -9,14 +9,18 @@ export const useNavigation = () => {
         window.location = where;
         return;
       }
-      history.push(where);
+      if (where !== history.location.pathname) {
+        history.push(where);
+      }
     },
     makeNavigation: (where) => () => {
       if (where.match(/^http[s]?:\/\//)) {
         window.location = where;
         return;
       }
-      history.push(where);
+      if (where !== history.location.pathname) {
+        history.push(where);
+      }
     },
   };
 };
