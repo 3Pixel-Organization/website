@@ -12,7 +12,7 @@ export const fetchNewAccessToken = (auth, dispatch) => {
     })
     .catch((err) => {
       if (err.response?.status === 403 || err.response?.status === 401) {
-        if (!auth.tokens.access) return;
+        // if (!auth.tokens.access) return;
         dispatch({ type: Actions.LOGOUT });
       }
     });
@@ -30,4 +30,20 @@ export const fetchUser = (auth, dispatch) => {
         dispatch({ type: Actions.LOGOUT });
       }
     });
+};
+
+export const checkForPermission = (user, permission) => {
+  if (!user) {
+    return false;
+  }
+
+  for (const role of user.roles) {
+    for (const perm of role.permissions) {
+      if (perm.module + '.' + perm.capability === permission) {
+        return true;
+      }
+    }
+  }
+
+  return false;
 };

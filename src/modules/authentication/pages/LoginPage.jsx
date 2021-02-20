@@ -31,7 +31,7 @@ export const LoginPage = () => {
       <Container>
         <Row>
           <Col xs={12}>
-            <Flex justifyCenter alignCenter>
+            <Flex style={{height: '8rem'}} justifyCenter alignCenter>
               <DiscordButton />
             </Flex>
           </Col>

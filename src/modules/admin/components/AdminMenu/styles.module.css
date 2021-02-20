@@ -1,0 +1,12 @@
+.ListItem {
+  color: inherit;
+}
+
+.ListItem li {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ListItem svg {
+  margin-right: 0.5rem;
+}

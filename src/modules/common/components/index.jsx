@@ -12,3 +12,4 @@ export { Page } from 'modules/common/components/Page';
 export { Route } from 'modules/common/components/Route';
 export { ContentEditor, ContentRenderer } from 'modules/common/components/ContentEditor';
 export * from 'modules/common/components/Input';
+export * from 'modules/common/components/Table/Table';

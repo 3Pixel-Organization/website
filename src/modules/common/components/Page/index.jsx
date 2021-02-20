@@ -10,7 +10,7 @@ export const Page = ({ children, hero, className = '', ...otherProps }) => {
     <>
       {!!hero && hero}
       <Flex
-        justifyCenter
+        // justifyCenter
         column
         fadeIn
         fluid
